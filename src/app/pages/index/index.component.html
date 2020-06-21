@@ -1,0 +1,187 @@
+<div class="row">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <div class="col-md-3 animated fadeIn">
+    <div class="card card-block tip-card">
+      <div class="tip-msg">
+        <h3>Users</h3>
+        <span>118 / 251</span>
+      </div>
+      <button class="tip-ico tip-ico-primary">
+        <i class="fa fa-group fa-fw"></i>
+      </button>
+    </div>
+  </div> -->
+  <!-- <div class="col-md-3 animated fadeIn">
+    <div class="card card-block tip-card">
+      <div class="tip-msg">
+        <h3>Messages</h3>
+        <span>2 messages</span>
+      </div>
+      <button class="tip-ico tip-ico-info">
+        <i class="fa fa-comments fa-fw"></i>
+      </button>
+    </div>
+  </div>
+  <div class="col-md-3 animated fadeIn">
+    <div class="card card-block tip-card">
+      <div class="tip-msg">
+        <h3>Mails</h3>
+        <span>2 mails</span>
+      </div>
+      <button class="tip-ico tip-ico-success">
+        <i class="fa fa-envelope fa-fw"></i>
+      </button>
+    </div>
+  </div>
+  <div class="col-md-3 animated fadeIn">
+    <div class="card card-block tip-card">
+      <div class="tip-msg">
+        <h3>Feedback</h3>
+        <span>20 feedbacks</span>
+      </div>
+      <button class="tip-ico tip-ico-danger">
+        <i class="fa fa-warning fa-fw"></i>
+      </button>
+    </div>
+  </div> -->
+  <!-- <div class="col-md-8">
+    <card cardTitle='Bar Chart' isCollapse="true">
+      <div echarts [options]="AnimationBarOption" [loading]="showloading" theme="dark"></div>
+    </card>
+  </div>
+  <div class="col-md-4">
+    <card cardTitle="Todo List" isCollapse="true">
+      <du-todolist></du-todolist>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card>
+      <profile></profile>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card>
+      <weather></weather>
+    </card>
+  </div> --> <!-- <p>ram is good</p>-->
+  <form [formGroup]="signupform">
+  <div class="form">
+    <div class="form-well-with-header">
+    <div class="form-well-header"> 
+      <h2 class="header-notify"> Send Notification </h2>
+      <div class="pull-right">
+      </div>
+    </div>
+
+
+
+      <div class="col-md-12">
+        <label for="validationTooltip01">Title</label>
+
+         <div class="search-btn-input">    
+           <i  class="fa fa-header fa-fw"></i>
+         </div>
+        <input formControlName="title" type="text" class="form-control" id="search" placeholder=" Title"  (keyup)="onKeyTitle($event)">
+    </div>
+     
+
+
+      <!-- <div class="col-md-12 margintop">
+        <label for="validationTooltip01">Location</label>
+
+        <div class="search-btn-input">    
+           <i  class="fa fa-map-marker fa-fw"></i>
+         </div>
+        <input type="text" class="form-control" id="search" placeholder=" Location" (keyup)="onKeyLocation($event)">  
+      </div> -->
+
+         <div class="col-md-12 margintop">
+        <label for="validationTooltip01">Text</label>
+
+        <div class="search-btn-input">    
+           <i  class="fa fa-info fa-fw"></i>
+         </div>
+        <textarea formControlName="message" class="form-control textarea1" rows="5" id="comment" placeholder="Message" (keyup)="onKeyMessage($event)"></textarea>
+      </div>
+
+  
+
+
+     
+
+<button [disabled]="!signupform.valid"  (click)="sendbutton()" type="button" class="btn btn-primary sendbtn">SEND</button>
+
+</div>
+</div> 
+</form>
+</div> 
+
+
+<div class="col-md-6">
+<div class="smartphone">
+<div class="content">
+
+
+<div class="card cardmiddle" >
+  <div class="card-body">
+  
+    <div class="sc-hmzhuo fBbNab">
+    <div class="sc-gGBfsJ eBrvpa">
+    <div class="sc-jnlKLf eCpFow">
+    <div class="sc-frDJqD bueuKL">
+     {{ TitleMsg }}
+    </div>
+     <!-- <div class="sc-kvZOFW jYavjY">{{ LocationMsg }}</div> -->
+    <div class="sc-kvZOFW jYavjY">{{ MessageMsg }}</div>
+    
+    </div></div>
+    </div>
+
+
+  </div>
+</div>
+  
+
+</div>
+</div>
+</div>
+
+
+
+ 
+
+
+     <!-- <div class="container">
+      <div class="row py-5 justify-content-center">
+       <div class="col-md-8">
+        <h1 class="text-center py-4">Export Data to Excel Sheet in Angular 8</h1>
+        <div class="col-md-12 table-responsive" #epltable>
+         <div style="padding-bottom: 10px;padding-top: 10px;">
+          <div class="row">
+           <div class="col-sm-12">
+            <button (click)="exportToExcel()" class="btn btn-success">Export To Excel</button> 
+           </div>
+          </div>
+         </div>
+         <table class="table table-bordered">
+          <thead class="thead-dark">
+          <tr>
+           <th>First Name</th>
+           <th>Full Address</th>
+           <th>Last Name</th>
+           <th>Telephone Number</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr *ngFor="let club of clubs">
+           <td>{{club.first_name}}</td>
+           <td>{{club.full_address}}</td>
+           <td>{{club.last_name}}</td>
+           <td>{{club.telephone_number}}</td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+     </div>
+    </div> -->
